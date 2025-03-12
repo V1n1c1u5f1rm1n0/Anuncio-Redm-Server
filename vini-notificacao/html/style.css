@@ -1,0 +1,172 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: kirsty;
+    font-size: 14px;
+    letter-spacing: 1px;
+      
+}
+
+@font-face {
+
+    font-family: kirsty;
+    src: url("./fontes/Kirsty\ Rg\ It.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+:root {
+    --cor-latao: #a08136;
+    --cor-preta-fundo:#141414;
+    --cor-texto: #ffffff;
+    --cor-sombra: #140e0ba4;
+    --cor-oficiais: #326028;
+    --cor-boticario: #cca442;
+    --cor-empresas: #7b7b7b;
+}
+
+body {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    height: 100vh; 
+    margin: 0;
+    padding-left: 10px;
+    background-color: transparent;
+}
+
+#notification-wrapper {
+    background: var(--cor-preta-fundo);
+    color: var(--cor-texto);
+    border: 2px solid var(--cor-latao);
+    border-radius: 14px;
+    box-shadow: 0px 8px 7px var(--cor-sombra);
+    padding: 0px 0px 12px 0;
+    width: 340px;
+}
+
+#notification-title {
+    margin: 0;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    background: var(--cor-verde);
+    color:var(--cor-latao);
+    border-radius: 8px 8px 0 0;
+    border-bottom: 1px solid var(--cor-texto);
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 12px 12px 12px 12px;
+}
+
+#notification-container {
+    margin: 0 18px 8px 18px;
+    min-height: 50px;
+    text-align: center;
+}
+
+/* Fomratação anuncio oficiais */
+
+
+#menu_oficiais {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: -5px 12px 12px 12px;
+}
+
+#notification_oficial {
+    margin: 0;
+    padding-left: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color:var(--cor-oficiais);
+    border-radius: 8px 8px 0 0;
+}
+
+
+#notification_oficial_anuncio {
+    margin: -15px 18px 8px 18px;
+    min-height: 50px;
+    text-align: start;
+}
+
+#notification-oficial-anun {
+    background: var(--cor-preta-fundo);
+    color: var(--cor-texto);
+    border: 2px solid var(--cor-latao);
+    border-radius: 14px;
+    box-shadow: 0px 8px 7px var(--cor-sombra);
+    padding: 0px 0px 12px 0;
+    width: 400px;
+}
+
+/* Fomratação anuncio boticario */
+
+#menu_boticario {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 15px 12px 35px 12px;
+}
+
+#notification_boticario {
+    margin: 0;
+    padding-left: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color:var(--cor-boticario);
+    border-radius: 8px 8px 0 0;
+}
+
+
+#notification_boticario_anuncio {
+    margin: -15px 18px 8px 18px;
+    min-height: 50px;
+    text-align: start;
+}
+
+
+/* Fomratação anuncio empresas */
+
+
+#menu_empresas {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 15px 12px 35px 18px;
+}
+
+#notification_empresas {
+    margin: 0;
+    padding-left: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color:var(--cor-latao);
+    border-radius: 8px 8px 0 0;
+}
+
+
+#notification_empresas_anuncio {
+    margin: -15px 18px 8px 18px;
+    min-height: 50px;
+    text-align: start;
+}
+
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 2; }
+}

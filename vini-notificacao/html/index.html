@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Notificações</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilização dos iframes a interface, nao interfere ao jogador*/
+
+        iframe {
+            border: none;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <iframe id="iframe_boticario" src="boticario.html"></iframe>
+    <iframe id="iframe_empresas" src="empresa.html"></iframe>
+    <iframe id="iframe_juridico" src="juridico.html"></iframe>
+    <iframe id="iframe_oficial" src="oficial.html"></iframe>
+    <iframe id="iframe_erro" src="erro.html"></iframe>
+
+    <script src="index.js"></script>
+</body>
+</html>
